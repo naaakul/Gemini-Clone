@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Outfit:wght@100..900&display=swap");
+
+* {
+  /* font-family: Outfit; */
+}
+
+#root {
+  min-hight: 100vh;
+  display: flex;
+}
