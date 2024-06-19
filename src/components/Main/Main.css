@@ -10,3 +10,38 @@
     gap: 15px;
     padding: 20px;
 }
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+
+.loader hr{
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    animation: loader 3s infinite linear;
+    background-size: 800px 50px;
+}
+
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .main-bottom input{
+        flex: none;
+        width: 150;
+    }
+    .main-bottom img{
+        width: 20px;
+    }
+    .search-box{
+        padding: 5px 10px;
+    }
+    .search-box div{
+        gap: 5px;
+    }
+}

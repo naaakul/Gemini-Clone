@@ -41,7 +41,10 @@ const Main = () => {
         />
       </div>
       <div className="main-container max-w-[900px] m-auto">
-        <div className="greet my-50px text-[56px] text-[#c4c7c5] font-medium p-[20px]">
+
+        {!showResult ? <>
+        
+          <div className="greet my-50px text-[56px] text-[#c4c7c5] font-medium p-[20px]">
           <p>
             <span>Hello, Nakul</span>
           </p>
@@ -89,6 +92,25 @@ const Main = () => {
             />
           </div>
         </div>
+
+        </>
+        : <div className="result px-[5%] max-h-[70vh] overflow-y-scroll scrollbar-hide">
+          <div className="result-title font-medium text-[17px] my-[40px] flex items-center gap-[26px]">
+            <img className="w-[40px] h-[40px] rounded-full object-cover" src={assets.user_icon} alt="" />
+            <p>{recentPrompt}</p>
+          </div>
+          <div className="result-data flex items-start gap-[20px]">
+            <img className="w-[45px]" src={assets.gemini_icon} alt="" />
+            {loading ? <div className="loader w-full flex flex-col gap-[10px]">
+              <hr className="rounded-[4px] border-0 bg-[#f6f7f8] h-[20px]"/>
+              <hr className="rounded-[4px] border-0 bg-[#f6f7f8] h-[20px]"/>
+              <hr className="rounded-[4px] border-0 bg-[#f6f7f8] h-[20px]"/>
+            </div> : <p className="text-[17px]" dangerouslySetInnerHTML={{__html:resultData}}></p>}
+          </div>
+        </div>
+        }
+
+        
         <div className="main-bottom absolute bottom-0 w-full max-w-[900px] px-[20px] m-auto">
           <div className="mt-[100px] search-box flex items-center justify-between gap-[20px] bg-[#f0f4f9] py-[10px] px-[20px] rounded-[50px]">
             <input
@@ -115,6 +137,7 @@ const Main = () => {
                 src={assets.send_icon}
                 alt=""
               />
+              
             </div>
           </div>
           <p className="bottom-info text-[13px] my-[15px] mx-auto text-center font-light">
