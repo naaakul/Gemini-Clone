@@ -112,34 +112,39 @@ const Main = () => {
 
         
         <div className="main-bottom absolute bottom-0 w-full max-w-[900px] px-[20px] m-auto">
-          <div className="mt-[100px] search-box flex items-center justify-between gap-[20px] bg-[#f0f4f9] py-[10px] px-[20px] rounded-[50px]">
-            <input
-              onChange={(e) => setInput(e.target.value)}
-              value={input}
-              className="flex-[1] bg-transparent border-none p-[8px] text-[18px] outline-none"
-              type="text"
-              placeholder="Enter a prompt here"
-            />
-            <div className="flex gap-2">
-              <img
-                className="w-[24px] cursor-pointer"
-                src={assets.gallery_icon}
-                alt=""
-              />
-              <img
-                className="w-[24px] cursor-pointer"
-                src={assets.mic_icon}
-                alt=""
-              />
-              <img
-                onClick={handleSend}
-                className="w-[24px] cursor-pointer"
-                src={assets.send_icon}
-                alt=""
-              />
-              
-            </div>
-          </div>
+        <div className="mt-[100px] search-box flex items-center justify-between gap-[20px] bg-[#f0f4f9] py-[10px] px-[20px] rounded-[50px]">
+  <input
+    onChange={(e) => setInput(e.target.value)}
+    value={input}
+    className="flex-[1] bg-transparent border-none p-[8px] text-[18px] outline-none"
+    type="text"
+    placeholder="Enter a prompt here"
+    onKeyDown={(e) => {
+      if (e.key === 'Enter') {
+        handleSend();
+      }
+    }}
+  />
+  <div className="flex gap-2">
+    <img
+      className="w-[24px] cursor-pointer"
+      src={assets.gallery_icon}
+      alt=""
+    />
+    <img
+      className="w-[24px] cursor-pointer"
+      src={assets.mic_icon}
+      alt=""
+    />
+    <img
+      onClick={handleSend}
+      className="w-[24px] cursor-pointer"
+      src={assets.send_icon}
+      alt=""
+    />
+  </div>
+</div>
+
           <p className="bottom-info text-[13px] my-[15px] mx-auto text-center font-light">
             Gemini may display inaccurate info, including about people, so
             double-check its responses. Your privacy and Gemini Apps
