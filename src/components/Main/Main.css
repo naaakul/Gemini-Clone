@@ -15,9 +15,15 @@
     display: none;
 }
 
-.loader hr{
+.loader{
     background: linear-gradient(to right, #4574D1, #171819, #4574D1);
     animation: loader 3s infinite linear;
+    background-size: 800px 50px;
+}
+
+.loader2{
+    background: linear-gradient(to right, #4574D1, #171819, #4574D1);
+    animation: loader2 5s infinite linear;
     background-size: 800px 50px;
 }
 
@@ -27,6 +33,15 @@
     }
     100%{
         background-position: 800px 0px;
+    }
+}
+
+@keyframes loader2 {
+    0%{
+        background-position: 800px 0px;
+    }
+    100%{
+        background-position: -800px 0px;
     }
 }
 

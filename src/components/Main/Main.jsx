@@ -99,10 +99,10 @@ const Main = () => {
             <div className="result-data flex items-start gap-[20px]">
               <img className="w-[45px]" src={assets.gemini_icon} alt="" />
               {loading ? (
-                <div className="loader w-full flex flex-col gap-[10px]">
-                  <hr className="rounded-[4px] border-0 bg-[#f6f7f8] h-[20px]" />
-                  <hr className="rounded-[4px] border-0 bg-[#f6f7f8] h-[20px]" />
-                  <hr className="rounded-[4px] border-0 bg-[#f6f7f8] h-[20px] w-60" />
+                <div className="w-full flex flex-col gap-[10px]">
+                  <hr className="loader rounded-[4px] border-0 bg-[#f6f7f8] h-[20px]" />
+                  <hr className="loader2 rounded-[4px] border-0 bg-[#f6f7f8] h-[20px]" />
+                  <hr className="loader rounded-[4px] border-0 bg-[#f6f7f8] h-[20px] w-60" />
                 </div>
               ) : (
                 <p
