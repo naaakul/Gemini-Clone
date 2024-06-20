@@ -44,4 +44,10 @@
     .search-box div{
         gap: 5px;
     }
+    .card{
+        display: none;
+    }
+    .ico{
+        display: none;
+    }
 }

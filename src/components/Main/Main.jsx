@@ -41,7 +41,9 @@ const Main = () => {
   return (
     <div className="main bg-[#131314] flex-[1] min-h-[100vh] pb-[15vh] relative">
       <div className="nav flex items-center justify-between text-[20px] p-[20px] text-[#CACCCE]">
-        <p className="font-normal flex items-center">Gemini <FaCaretDown /></p>
+        <p className="font-normal flex items-center">
+          Gemini <FaCaretDown />
+        </p>
         <img
           src={assets.user_icon}
           alt=""
@@ -57,28 +59,28 @@ const Main = () => {
               </p>
               <p className="text-[#444746]">How can I help you today?</p>
             </div>
-            <div className="cards sm:hidden">
-              <div className="card hover:bg-[#333537] h-[200px] p-[15px] bg-[#1E1F20] rounded-[10px] relative cursor-pointer">
+            <div className="cards">
+              <div className="carda hover:bg-[#333537] h-[200px] p-[15px] bg-[#1E1F20] rounded-[10px] relative cursor-pointer">
                 <p className="text-[#E3E3E3] font-[17px]">
-                Write a product description for a new type of toothbrush
+                  Write a product description for a new type of toothbrush
                 </p>
                 <RiBallPenFill className="p-[8px] w-[38px] h-[38px] absolute rounded-full text-[#E3E3E3] bg-zinc-900 bottom-[15px] right-[15px]" />
               </div>
               <div className="card hover:bg-[#333537] h-[200px] p-[15px] bg-[#1E1F20] rounded-[10px] relative cursor-pointer">
                 <p className="text-[#E3E3E3] font-[17px]">
-                Create a travel itinerary for a city
+                  Create a travel itinerary for a city
                 </p>
                 <FaRegCompass className="p-[8px] w-[38px] h-[38px] absolute rounded-full text-[#E3E3E3] bg-zinc-900 bottom-[15px] right-[15px]" />
               </div>
               <div className="card hover:bg-[#333537] h-[200px] p-[15px] bg-[#1E1F20] rounded-[10px] relative cursor-pointer">
                 <p className="text-[#E3E3E3] font-[17px]">
-                Help me compare these college majors
+                  Help me compare these college majors
                 </p>
                 <MdLightbulbOutline className="p-[5px] w-[38px] h-[38px] absolute rounded-full text-[#E3E3E3] bg-zinc-900 bottom-[15px] right-[15px]" />
               </div>
               <div className="card hover:bg-[#333537] h-[200px] p-[15px] bg-[#1E1F20] rounded-[10px] relative cursor-pointer">
                 <p className="text-[#E3E3E3] font-[17px]">
-                What's the time it takes to walk to several landmarks
+                  What's the time it takes to walk to several landmarks
                 </p>
                 <SiGooglemaps className="p-[8px] w-[38px] h-[38px] absolute rounded-full text-[#E3E3E3] bg-zinc-900 bottom-[15px] right-[15px]" />
               </div>
@@ -127,16 +129,16 @@ const Main = () => {
               }}
             />
             <div className="flex gap-4 items-center">
-            <BiImageAdd
+              <BiImageAdd
                 size={45}
-                className="text-[#E3E3E3] w-[26px] cursor-pointer"
+                className="ico text-[#E3E3E3] w-[26px] cursor-pointer"
               />
               <IoIosCamera
                 size={48}
-                className="text-[#E3E3E3] w-[26px] cursor-pointer"
+                className="ico text-[#E3E3E3] w-[26px] cursor-pointer"
               />
               <IoMdSend
-              onClick={handleSend}
+                onClick={handleSend}
                 size={42}
                 className="text-[#E3E3E3] w-[26px] cursor-pointer"
               />
@@ -144,8 +146,8 @@ const Main = () => {
           </div>
 
           <p className="bottom-info text-[13px] text-[#E3E3E3] my-[15px] mx-auto text-center font-light">
-            Some information given by this clone may not be correct because of free Google - gemini API so think twice before blaming
-            pokkii Nakul.
+            Some information given by this clone may not be correct because of
+            free Google - gemini API so think twice before blaming pokkii Nakul.
           </p>
         </div>
       </div>
