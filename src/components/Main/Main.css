@@ -16,7 +16,7 @@
 }
 
 .loader hr{
-    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background: linear-gradient(to right, #4574D1, #171819, #4574D1);
     animation: loader 3s infinite linear;
     background-size: 800px 50px;
 }
