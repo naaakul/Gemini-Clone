@@ -60,7 +60,7 @@ const Main = () => {
               <p className="text-[#444746]">How can I help you today?</p>
             </div>
             <div className="cards">
-              <div className="carda hover:bg-[#333537] h-[200px] p-[15px] bg-[#1E1F20] rounded-[10px] relative cursor-pointer">
+              <div className="card hover:bg-[#333537] h-[200px] p-[15px] bg-[#1E1F20] rounded-[10px] relative cursor-pointer">
                 <p className="text-[#E3E3E3] font-[17px]">
                   Write a product description for a new type of toothbrush
                 </p>
@@ -147,7 +147,7 @@ const Main = () => {
 
           <p className="bottom-info text-[13px] text-[#E3E3E3] my-[15px] mx-auto text-center font-light">
             Some information given by this clone may not be correct because of
-            free Google - gemini API so think twice before blaming pokkii Nakul.
+            free Google - gemini API so think twice before blaming the cutie on the top right corner.
           </p>
         </div>
       </div>
